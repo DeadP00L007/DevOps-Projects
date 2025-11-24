@@ -14,7 +14,7 @@
 #    limitations under the License.
 #
 
-FROM openjdk:17
+FROM openjdk:17-jdk-slim
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 RUN ./mvnw clean package
